@@ -3,6 +3,21 @@
 <head>
 <title>Thomas K. Lovett</title>
 <style>
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 200px;
@@ -10,10 +25,46 @@ h1 {
     letter-spacing: 0.11em;
     text-transform: uppercase;
 }
+a {
+	color: #000000;
+}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:active {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul {
+	text-align: center;
+	list-style: none;
+	width: 100%;
+}
+li {
+	width: 100px;
+	list-style-type: none;
+	display: inline-block;
+}
+
 </style>
 </head>
 <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+<link href='font-awesome.min.css' rel='stylesheet' type='text/css'>
 <body>
-<h1>tklovett</h1>
+	<h1 class="noselect">tklovett</h1>
+	<ul>
+		<li>
+			<a href="https://www.facebook.com/tklovett/">
+				<i class="icon-facebook icon-2x"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.github.com/tklovett/">
+				<i class="icon-github-alt icon-2x"></i>
+			</a>
+		</li>
+		<li>
+			<a href="http://tklovett.tumblr.com/">
+				<i class="icon-camera-retro icon-2x"></i>
+			</a>
+		</li>
+	</ul>
 </body>
 </html>
