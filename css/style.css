@@ -1,0 +1,52 @@
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+#header {
+	height: 80px;
+}
+#footer {
+	position: fixed;
+	bottom: 10px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+.profile-link,
+.profile-link-spacer {
+	float: left;
+	width: 10%;
+}
+.profile-link-spacer {
+	height: 1px;
+}
+
+body {
+	background-image: url('../img/paper_fibers.png');
+	background-repeat: repeat;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 200px;
+    text-align: center;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+a {
+	color: #000000;
+	display: block;
+	text-decoration: none;
+}

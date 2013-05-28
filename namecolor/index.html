@@ -1,0 +1,151 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+	@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Alef);
+	html, body, div, p {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	body {
+		overflow: hidden;
+		text-align: center;
+		color: white;
+	}
+	h1 {
+		font-family: 'Fugaz One', cursive;
+		font-size: 64px;
+	}
+	h2 {
+		font-family: 'Alef', sans-serif;
+		margin-top: 50px;
+	}
+	input {
+		margin-top: 50px;
+		font-family: 'Fugaz One', cursive;
+		font-size: 64px;
+		background-color: transparent;
+		border: none;
+		border-bottom: dashed;
+		cursor: text;
+		text-align: center;
+		width: 550px;
+		outline: none;
+	}
+	#colors {
+		height: 100%;
+		width: 100%;
+		display: table;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: -1;
+	}
+	#colorText div,
+	#colors div {
+		display: table-cell;
+		text-align: center;
+		width: 25px;
+	}
+	#colorText {
+		height: 100px;
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+		line-height: 100px;
+	}
+	</style>
+	<script type="text/javascript" src="http://chir.ag/projects/ntc/ntc.js"></script>
+</head>
+<body>
+	<div id="colors"></div>
+	<input id="input" type="text" name="name" onkeyup="updateName();" autocomplete="off">
+	<h2>Converted to binary:</h2>
+	<p id="binary"></p>
+	<h2>Converted to hexadecimal:</h2>
+	<p id="hex"></p>
+	<h2>Converted to Crayola&reg; colors:</h2>
+	<div id="colortext"></div>
+
+	<script type="text/javascript">
+	function updateName()
+	{
+		var name = document.getElementById("input").value;
+		
+		// binary
+		var binary = "";
+		for (i=0; i < name.length; i++) {
+			binary += name[i].charCodeAt(0).toString(2) + " ";
+		}
+		document.getElementById("binary").innerHTML = binary;
+
+		// hex
+		var hex = "";
+		for (i=0; i < name.length; i++) {
+			hex += name[i].charCodeAt(0).toString(16) + " ";
+		}
+		document.getElementById("hex").innerHTML = hex;
+
+		// hex
+		var colorString = "";
+		var colors = [];
+		var hex = "";
+		for (var i=0; i < name.length; i++)
+		{
+			if (i % 3 == 0)
+			{
+				colors.push("");
+				hex = "";
+			}
+			hex += name[i].charCodeAt(0).toString(16);
+			colors[colors.length-1] += hex;
+			colorString             += hex;
+			if (i % 3 == 2)
+			{
+				colorString += " ";
+			}
+			hex = "";
+		}
+
+		colorsDiv = document.getElementById("colors");
+		colorText = document.getElementById("colortext");
+		colorsDiv.innerHTML = "";
+		colorText.innerHTML = "";
+		if (colors.length > 0)
+		{
+			lengthLast = colors[colors.length-1].length;
+			colors[colors.length-1] += Array(6-lengthLast+1).join("0");
+			
+			for (var i=0; i < colors.length; ++i)
+			{
+				var div = document.createElement("div");
+				div.style.backgroundColor = "#"+colors[i];
+				colorsDiv.appendChild(div);
+
+				var div2 = document.createElement("div");
+				colorName = ntc.name("#"+colors[i])[1];
+				div2.innerHTML = colorName;
+				colorText.appendChild(div2);
+			}
+		}
+	}
+
+	</script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-37601486-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</body>
+</html>
