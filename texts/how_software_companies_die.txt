@@ -1,7 +1,7 @@
 ==========================
 How Software Companies Die
 ==========================
- - Orson Scott Card
+By Orson Scott Card
 
 The environment that nurtures creative programmers kills management and
 marketing types - and vice versa.
@@ -87,9 +87,3 @@ their software loses market share as the code bloats and the bugs
 proliferate.
 
 Got to get some better packaging. Yeah, that's it.
-
-------------
-
-Yes, it's from Orson Scott Card, the Hugo and Nebula award winning
-author of Ender's Game, Speaker for the Dead, Lost Boys, the Alvin
-Maker series, and many others novels.
