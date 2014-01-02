@@ -14,39 +14,33 @@
 	user-select: none;
 	cursor: default;
 }
-#header {
-	height: 80px;
-}
-#footer {
-	position: fixed;
-	bottom: 10px;
-	left: 0px;
-	width: 100%;
-	text-align: center;
-}
-.profile-link,
-.profile-link-spacer {
-	float: left;
-	width: 10%;
-}
-.profile-link-spacer {
-	height: 1px;
-}
-
 body {
-	background-image: url('../img/paper_fibers.png');
-	background-repeat: repeat;
+	background: #fafafa;
 }
 h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 200px;
-    text-align: center;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
+    font-size: 100px;
+    margin-top: 90px;
+    margin-left: 20px;
 }
-
-a {
-	color: #000000;
-	display: block;
+h2 {
+    font-size: 75px;
+    margin-top: 5px;
+    margin-left: 42px;
+}
+#content {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 5px;
+	color: #333;
+}
+#links {
+	margin-top: 50px;
+	list-style: none;
+}
+#links a {
+	font-size: 26px;
+	margin-left: 41px;
+	margin-top: 4px;
+	color: #333;
 	text-decoration: none;
+	letter-spacing: 2px;
 }
