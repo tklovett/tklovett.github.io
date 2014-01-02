@@ -83,7 +83,7 @@
 	function updateName()
 	{
 		var name = document.getElementById("input").value;
-		
+
 		// binary
 		var binary = "";
 		for (i=0; i < name.length; i++) {
@@ -127,7 +127,7 @@
 		{
 			lengthLast = colors[colors.length-1].length;
 			colors[colors.length-1] += Array(6-lengthLast+1).join("0");
-			
+
 			for (var i=0; i < colors.length; ++i)
 			{
 				var div = document.createElement("div");
