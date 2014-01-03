@@ -32,6 +32,7 @@ h2 {
 	margin-top: 50px;
 	padding: 0;
 	list-style: none;
+	letter-spacing: 0px;
 }
 #links a {
 	font-size: 26px;
