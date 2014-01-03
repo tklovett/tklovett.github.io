@@ -7,7 +7,7 @@ This repository holds all the code and resources for my personal website. The si
 
 This is the main landing page. It's just my handle and links to my various pages and profiles.
 
-## [/card](http://tklovett.com/card/)
+## [/facecard](http://tklovett.com/facecard/)
 
 Here I attempted to create a business card in the form of a facebook profile. The page pulls my profile picture and cover photo from facebook, and uses similar formatting to the birthday notifications that appear in facebook newsfeeds.
 
