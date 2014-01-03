@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Thomas Lovett</title>
 	<meta name="author" content="Thomas Lovett">
 	<meta name="description" content="Developer, hacker, and (amateur) designer. Student at Michigan, soon to be at RetailMeNot.">
@@ -14,14 +15,20 @@
 		<h1>Thomas Lovett</h1>
 		<h2>File not found.</h2>
 		<ul id="links">
-			<li><a href="https://kippt.com/tklovett/" target="_blank">Clips</a></li>
-			<li><a href="https://www.github.com/tklovett/" target="_blank">Code</a></li>
-			<li><a href="mailto:tklovett@gmail.com">Mail</a></li>
-			<li><a href="http://photos.tklovett.com/" target="_blank">Photos</a></li>
-			<li><a href="/resume.pdf" target="_blank">R&eacute;sum&eacute;</a></li>
-			<li><a href="/texts/">Texts</a></li>
-		</div>
+			<li><a id="inform-link" href="mailto:tklovett@gmail.com?subject=tklovett.com 404'd&amp;body=">Tell Thomas what happened</a></li>
+			<li><a href="/">Take me home!</a></li>
+		</ul>
 	</div>
+
+	<!-- begin thomas's code -->
+	<script>
+	window.onload = function() {
+		var a = document.getElementById("inform-link");
+		a.href += "Hey Thomas,%0D%0A%0D%0AI got a 404 error when visiting " + document.URL;
+		a.href += ". Here's how I got to this page:%0D%0A%0D%0A%0D%0A%0D%0ABest,%0D%0A "
+	}
+	</script>
+	<!-- end thomas's code -->
 
 	<!-- begin google analytics code -->
 	<script>
@@ -52,8 +59,9 @@
 	b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
 	loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
 	/* custom configuration goes here (www.olark.com/documentation) */
-	olark.identify('7965-616-10-5443');/*]]>*/</script><noscript><a href="https://www.olark.com/site/7965-616-10-5443/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+	olark.identify('7965-616-10-5443');/*]]>*/
+	</script>
+	<noscript><a href="https://www.olark.com/site/7965-616-10-5443/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
 	<!-- end olark code -->
-
 </body>
 </html>
