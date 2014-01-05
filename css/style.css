@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:300|Source+Sans+Pro:200,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300|Source+Sans+Pro:200,400);
 
 .noselect {
 	-webkit-touch-callout: none;
@@ -37,7 +37,7 @@ h2 {
 /* For ul layout */
 #links {
 	font-family: 'Raleway';
-	font-weight: 300;
+	font-weight: 200;
 	margin-top: 50px;
 	font-size: 28px;
 	list-style: none;
