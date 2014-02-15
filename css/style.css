@@ -40,6 +40,9 @@ a:hover {
 	border-left: 2px solid #F55510;
 	padding-left: 6px;
 }
+img[src*="typekit"] {
+	display: none !important;
+}
 
 /* For ul layout */
 #links {
