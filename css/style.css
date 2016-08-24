@@ -1,78 +1,89 @@
+:root {
+    --color-background: #ffffff;
+    --color-primary: #333333;
+    --color-accent: #4380b1;
+    --font-size-small: 18px;
+    --font-size-regular: 24px;
+    --font-size-large: 48px;
+    --line-height-tight: 120%;
+    --line-height-regular: 135%;
+}
+
+html {
+    background: var(--color-background);
+    color: var(--color-primary);
+    font-family: "Lora", serif;
+    font-size: var(--font-size-regular);
+}
+
 body {
-	background: #fafafa;
-	margin: 0;
-	padding: 0;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
+    position: relative;
 }
-#accent-bar {
-	background: #F55510;
-	width: 16px;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	cursor: pointer;
+
+.content {
+    min-width: 20rem;
+    margin-left: 11.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 0;
+    padding: 3rem 0 10rem 0;
 }
-#content {
-	font-family: 'Raleway', sans-serif;
-	font-size: 32px;
-	font-weight: 200;
-	line-height: 1.3;
-	padding: 96px 72px 0 80px;
-	color: #333;
-}
-.Thomas {
-	margin-left: -16px;
-}
+
 h1 {
-	font-size: 72px;
-	font-weight: 300;
-    margin: 0;
+    font-size: var(--font-size-large);
+    font-weight: 300;
+    margin: -12px 0 0;
 }
-h2 {
-	font-size: inherit;
-	font-weight: inherit;
-    margin: 0;
+
+.byline {
+    font-family: "Lato", sans-serif;
+    display: block;
+    font-style: italic;
 }
+
+p {
+    line-height: var(--line-height-regular);
+    margin: 0 0 1em;
+    text-indent: 0;
+}
+
 a {
-	padding-left: 8px;
-	margin-left: -8px;
+    color: var(--color-accent);
+    text-decoration: none;
 }
+
 a:hover {
-	border-left: 2px solid #F55510;
-	padding-left: 6px;
-}
-img[src*="typekit"] {
-	display: none !important;
+    text-decoration: underline;
 }
 
-/* For ul layout */
-#links {
-	margin-top: 50px;
-	list-style: none;
-	line-height: 1.4;
-	padding: 0;
-}
-#links a {
-	display: inline-block;
-	color: inherit;
-	text-decoration: none;
+.sidebar {
+    float: left;
+    position: absolute;
+    text-align: right;
+    left: 1.5rem;
+    border-top: solid 2px #5899cf;
+    padding: 12px 0 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
 }
 
-/* For table layout*/
-table {
-	margin-top: 50px;
-	font-family: 'source-sans-pro';
-	font-size: 24px;
-	list-style: none;
-	border-spacing: 0;
+.sidebar a {
+    line-height: var(--line-height-regular);
+    font-size: var(--font-size-small);
+    color: var(--color-primary);
+    display: block;
 }
-tr > td:first-child,
-tr > td:first-child * {
-	font-weight: 400;
-	color: inherit;
-	text-decoration: none;
-	padding-right: 10px;
-}
-td {
-	padding: 0;
+
+
+@media (max-device-width: 760px) {
+    .content {
+        margin-left: 2.5rem;
+    }
+    .sidebar {
+        float: right;
+        position: static;
+    }
 }
